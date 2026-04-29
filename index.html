@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>保育お便り帳ジェネレーター | おたより作成をもっとラクに</title>
+  <meta
+    name="description"
+    content="保育士さんの連絡帳・おたより帳づくりをサポート。名前、年齢、様子タグ、活動を入れるだけで、保護者に伝わる文章のたたき台を作れます。"
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            milk: "#FFF9F0",
+            cream: "#FFF2DC",
+            peach: "#FF9F5A",
+            peachDark: "#DD6B20",
+            leaf: "#6FA66A",
+            ink: "#2B2926",
+            softBrown: "#766A5E"
+          },
+          boxShadow: {
+            soft: "0 20px 50px rgba(116, 85, 53, 0.14)"
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-milk text-ink antialiased">
+  <main>
+    <section class="px-5 py-8 sm:py-12 lg:py-16">
+      <div class="mx-auto max-w-6xl">
+        <header class="mb-12 flex items-center justify-between">
+          <p class="text-sm font-black text-peachDark sm:text-base">保育お便り帳ジェネレーター</p>
+          <a href="https://hoiku-letter-tool.web.app" class="rounded-full bg-white px-4 py-2 text-sm font-bold text-peachDark shadow-sm ring-1 ring-orange-100 hover:bg-cream">無料で使う</a>
+        </header>
+
+        <div class="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+          <div>
+            <p class="mb-4 inline-flex rounded-full bg-white px-4 py-2 text-sm font-bold text-leaf shadow-sm">MVPテスト中 | 忙しい保育士さんの文章作成サポート</p>
+            <h1 class="text-4xl font-black leading-tight tracking-tight sm:text-5xl lg:text-6xl">
+              連絡帳・おたより帳の<br />
+              書き出しを、<br class="sm:hidden" />
+              少しラクにする。
+            </h1>
+            <p class="mt-6 max-w-xl text-lg leading-8 text-softBrown">
+              名前、年齢、様子タグ、活動を入れるだけで、
+              保護者に伝わる文章のたたき台づくりをサポートします。
+            </p>
+            <p class="mt-4 max-w-xl text-lg leading-8 text-softBrown">
+              AIっぽすぎない、現場で使いやすい連絡帳文を目指して改善中です。
+              まずはMVP版として、少ない入力で試せる形に絞っています。
+            </p>
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a href="https://hoiku-letter-tool.web.app" class="inline-flex items-center justify-center rounded-2xl bg-peach px-8 py-4 text-base font-black text-white shadow-soft transition hover:bg-peachDark">無料で試す</a>
+              <a href="#how" class="inline-flex items-center justify-center rounded-2xl bg-white px-8 py-4 text-base font-bold text-peachDark ring-1 ring-orange-100 transition hover:bg-cream">使い方を見る</a>
+            </div>
+            <p class="mt-4 text-sm text-softBrown">freeでも日本語生成を試せます。使ったあとに感想も送れます。</p>
+          </div>
+
+          <div class="rounded-[2rem] bg-white p-5 shadow-soft ring-1 ring-orange-100">
+            <div class="rounded-[1.5rem] bg-cream p-5">
+              <p class="mb-3 text-sm font-black text-peachDark">たとえば、こんな入力から</p>
+              <div class="space-y-3 text-sm text-softBrown">
+                <div class="rounded-2xl bg-white p-4">年齢：2歳 / 様子タグ：😊 笑顔、🍚 少食</div>
+                <div class="rounded-2xl bg-white p-4">活動：園庭で砂遊びをしました。友だちと山を作っていました。</div>
+              </div>
+              <div class="my-5 flex justify-center">
+                <span class="rounded-full bg-peach px-4 py-2 text-sm font-black text-white">保護者向けのたたき台に</span>
+              </div>
+              <div class="rounded-2xl bg-white p-5 text-sm leading-7 text-softBrown">
+                今日は園庭で砂遊びをしました。友だちと一緒に山を作りながら、
+                形を整える姿が見られました。食事量は少なめでしたが、
+                笑顔も見られ、自分のペースで食べ進めていました。
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white px-5 py-16">
+      <div class="mx-auto max-w-5xl">
+        <div class="mx-auto max-w-2xl text-center">
+          <p class="text-sm font-black text-peachDark">保育士さんの毎日にある悩み</p>
+          <h2 class="mt-3 text-3xl font-black tracking-tight sm:text-4xl">
+            書くことはある。<br />
+            でも、文章にする余裕がない。
+          </h2>
+          <p class="mt-5 leading-8 text-softBrown">
+            保育のあとには、記録、準備、片付け、保護者対応。
+            その中で毎日連絡帳やおたより帳の文を整えるのは、思っている以上に大変です。
+          </p>
+        </div>
+        <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="rounded-3xl bg-milk p-6"><p class="text-lg font-black">時間が足りない</p><p class="mt-3 text-sm leading-7 text-softBrown">子どもの様子を書く前に、他の仕事で一日が終わってしまう。</p></div>
+          <div class="rounded-3xl bg-milk p-6"><p class="text-lg font-black">言葉に迷う</p><p class="mt-3 text-sm leading-7 text-softBrown">けがや体調、食事や睡眠の様子をどう書くかで手が止まりやすい。</p></div>
+          <div class="rounded-3xl bg-milk p-6"><p class="text-lg font-black">表現が同じになる</p><p class="mt-3 text-sm leading-7 text-softBrown">毎日書いていると、どうしても似た文章になってしまう。</p></div>
+          <div class="rounded-3xl bg-milk p-6"><p class="text-lg font-black">整えるのに時間がかかる</p><p class="mt-3 text-sm leading-7 text-softBrown">内容はあるのに、保護者に伝わる文にまとめるまでが意外と長い。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-5 py-16">
+      <div class="mx-auto max-w-5xl">
+        <div class="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+          <div>
+            <p class="text-sm font-black text-peachDark">このツールがやること</p>
+            <h2 class="mt-3 text-3xl font-black leading-tight tracking-tight sm:text-4xl">
+              少ない入力から、<br />
+              連絡帳文のたたき台を作る。
+            </h2>
+          </div>
+          <div class="rounded-[2rem] bg-white p-7 shadow-sm">
+            <p class="leading-8 text-softBrown">
+              このツールは、保育士さんの仕事を置き換えるものではありません。
+              現場で見た様子をもとに、文章の書き出しや整理を助けるための道具です。
+            </p>
+            <p class="mt-5 leading-8 text-softBrown">
+              名前、年齢、様子タグ、活動の1文入力を中心に、
+              忙しい日でも使いやすいMVPとして改善を続けています。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white px-5 py-16">
+      <div class="mx-auto max-w-5xl">
+        <div class="text-center">
+          <p class="text-sm font-black text-peachDark">使うと変わること</p>
+          <h2 class="mt-3 text-3xl font-black tracking-tight sm:text-4xl">文章づくりの負担を、現実的に軽くします。</h2>
+        </div>
+        <div class="mt-10 grid gap-5 md:grid-cols-3">
+          <div class="rounded-3xl border border-orange-100 p-6"><p class="text-xl font-black">書き出しが早くなる</p><p class="mt-3 text-sm leading-7 text-softBrown">ゼロから考える代わりに、たたき台から整える流れにできます。</p></div>
+          <div class="rounded-3xl border border-orange-100 p-6"><p class="text-xl font-black">伝えたい項目を入れやすい</p><p class="mt-3 text-sm leading-7 text-softBrown">食事、睡眠、けが・体調などもタグから選んで反映できます。</p></div>
+          <div class="rounded-3xl border border-orange-100 p-6"><p class="text-xl font-black">やさしい文に整えやすい</p><p class="mt-3 text-sm leading-7 text-softBrown">保護者に安心感が伝わる、丁寧でやさしい文章づくりを支えます。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-5 py-16">
+      <div class="mx-auto max-w-5xl">
+        <div class="text-center">
+          <p class="text-sm font-black text-peachDark">機能はシンプル</p>
+          <h2 class="mt-3 text-3xl font-black tracking-tight sm:text-4xl">必要なことだけ、迷わず使えます。</h2>
+        </div>
+        <div class="mt-10 grid gap-5 md:grid-cols-3 lg:grid-cols-6">
+          <div class="rounded-3xl bg-white p-6 shadow-sm"><p class="font-black">年齢選択</p><p class="mt-3 text-sm leading-7 text-softBrown">0 / 1 / 2 / 年少 / 年中 / 年長に対応。</p></div>
+          <div class="rounded-3xl bg-white p-6 shadow-sm"><p class="font-black">様子タグ</p><p class="mt-3 text-sm leading-7 text-softBrown">感情、睡眠、食事、けが・体調をボタンで選べます。</p></div>
+          <div class="rounded-3xl bg-white p-6 shadow-sm"><p class="font-black">活動1文入力</p><p class="mt-3 text-sm leading-7 text-softBrown">その日の活動や様子を短く入れるだけで使えます。</p></div>
+          <div class="rounded-3xl bg-white p-6 shadow-sm"><p class="font-black">文章量選択</p><p class="mt-3 text-sm leading-7 text-softBrown">短め / ふつう から選べます。</p></div>
+          <div class="rounded-3xl bg-white p-6 shadow-sm"><p class="font-black">詳細設定</p><p class="mt-3 text-sm leading-7 text-softBrown">日付、組、トーンを必要に応じて調整できます。</p></div>
+          <div class="rounded-3xl bg-white p-6 shadow-sm"><p class="font-black">感想回収</p><p class="mt-3 text-sm leading-7 text-softBrown">全プランで感想と改善要望を送れます。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="bg-white px-5 py-16">
+      <div class="mx-auto max-w-5xl">
+        <div class="text-center">
+          <p class="text-sm font-black text-peachDark">利用イメージ</p>
+          <h2 class="mt-3 text-3xl font-black tracking-tight sm:text-4xl">4ステップで使えます。</h2>
+        </div>
+        <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+          <div class="rounded-3xl bg-milk p-7"><div class="mb-5 flex h-11 w-11 items-center justify-center rounded-full bg-peach text-lg font-black text-white">1</div><p class="text-lg font-black">名前と年齢を選ぶ</p><p class="mt-3 text-sm leading-7 text-softBrown">名前は初回入力、次回から候補表示。年齢はボタンで選べます。</p></div>
+          <div class="rounded-3xl bg-milk p-7"><div class="mb-5 flex h-11 w-11 items-center justify-center rounded-full bg-peach text-lg font-black text-white">2</div><p class="text-lg font-black">様子タグと活動を入れる</p><p class="mt-3 text-sm leading-7 text-softBrown">様子タグは未選択でもOK。必要な項目だけを選んで使えます。</p></div>
+          <div class="rounded-3xl bg-milk p-7"><div class="mb-5 flex h-11 w-11 items-center justify-center rounded-full bg-peach text-lg font-black text-white">3</div><p class="text-lg font-black">文章量を選んで生成</p><p class="mt-3 text-sm leading-7 text-softBrown">短め / ふつう から選択。日付やトーンは詳細設定で変えられます。</p></div>
+          <div class="rounded-3xl bg-milk p-7"><div class="mb-5 flex h-11 w-11 items-center justify-center rounded-full bg-peach text-lg font-black text-white">4</div><p class="text-lg font-black">必要に応じて整えて使う</p><p class="mt-3 text-sm leading-7 text-softBrown">たたき台をもとに少し整えて、その日の連絡帳文に使えます。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-5 py-16">
+      <div class="mx-auto max-w-4xl rounded-[2rem] bg-ink p-8 text-white shadow-soft sm:p-10">
+        <p class="text-sm font-black text-peach">同じ悩みを持つ保育士さんへ</p>
+        <h2 class="mt-3 text-3xl font-black leading-tight sm:text-4xl">文章作成を、ひとりで抱え込まなくていい。</h2>
+        <p class="mt-5 leading-8 text-white/80">
+          このツールは、現場で見ている子どもの姿を、
+          保護者に伝わる文章へ整えるためのサポートです。
+        </p>
+        <p class="mt-4 leading-8 text-white/80">
+          完成文を押しつけるのではなく、
+          忙しい日に使いやすい文章のたたき台を返すことを大切にしています。
+        </p>
+      </div>
+    </section>
+
+    <section class="bg-white px-5 py-16">
+      <div class="mx-auto max-w-3xl">
+        <div class="rounded-[2rem] bg-milk p-8 text-center shadow-sm sm:p-10">
+          <p class="text-sm font-black text-peachDark">MVPテスト中</p>
+          <blockquote class="mt-5 text-2xl font-black leading-relaxed sm:text-3xl">使ってみた感想や改善要望を集めながら、少しずつ調整しています。</blockquote>
+          <p class="mt-4 text-sm text-softBrown">感想回収は free / plus どちらでも利用できます。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="px-5 py-16">
+      <div class="mx-auto max-w-5xl">
+        <div class="text-center">
+          <p class="text-sm font-black text-peachDark">料金</p>
+          <h2 class="mt-3 text-3xl font-black tracking-tight sm:text-4xl">まずは無料で試せます。</h2>
+          <p class="mt-4 text-softBrown">freeで日本語生成を試して、もっと使いたい場合にplusを選べます。</p>
+        </div>
+        <div class="mt-10 grid gap-6 md:grid-cols-2">
+          <div class="rounded-[2rem] bg-white p-7 shadow-sm ring-1 ring-orange-100">
+            <p class="text-xl font-black">free</p>
+            <p class="mt-3 text-4xl font-black">0円</p>
+            <p class="mt-2 text-sm text-softBrown">まず試したい方向け</p>
+            <ul class="mt-6 space-y-3 text-sm text-softBrown"><li>・日本語生成を試せる</li><li>・生成回数に制限あり</li><li>・感想送信ができる</li></ul>
+            <a href="https://hoiku-letter-tool.web.app" class="mt-7 inline-flex w-full items-center justify-center rounded-2xl bg-peach px-6 py-4 font-black text-white transition hover:bg-peachDark">無料で試す</a>
+          </div>
+          <div class="rounded-[2rem] bg-white p-7 shadow-soft ring-2 ring-peach">
+            <p class="inline-flex rounded-full bg-orange-100 px-3 py-1 text-xs font-black text-peachDark">もっと使いたい方向け</p>
+            <p class="mt-4 text-xl font-black">plus</p>
+            <p class="mt-3 text-4xl font-black">500円<span class="text-base font-bold text-softBrown"> / 月</span></p>
+            <p class="mt-2 text-sm text-softBrown">freeより多く使いたい方向け</p>
+            <ul class="mt-6 space-y-3 text-sm text-softBrown"><li>・freeより生成回数が多い</li><li>・日本語生成</li><li>・現在は英語翻訳も利用可能</li><li>・感想送信ができる</li></ul>
+            <a href="https://hoiku-letter-tool.web.app" class="mt-7 inline-flex w-full items-center justify-center rounded-2xl bg-ink px-6 py-4 font-black text-white transition hover:bg-stone-700">MVP版を使ってみる</a>
+          </div>
+        </div>
+        <p class="mt-6 text-center text-sm text-softBrown">回数制限の詳細はアプリ内表示を基準にしてください。現時点では free 1日1回、plus 1日30回の設定を確認しています。</p>
+      </div>
+    </section>
+
+    <section class="bg-peach px-5 py-16 text-white">
+      <div class="mx-auto max-w-3xl text-center">
+        <h2 class="text-3xl font-black leading-tight sm:text-4xl">今日の連絡帳文づくりを、少しラクに。</h2>
+        <p class="mt-5 leading-8 text-white/90">まずは無料で試して、使い心地や改善してほしい点を教えてください。MVP版として、現場で使いやすい形を探しています。</p>
+        <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <a href="https://hoiku-letter-tool.web.app" class="inline-flex items-center justify-center rounded-2xl bg-white px-8 py-4 text-base font-black text-peachDark shadow-soft transition hover:bg-milk">無料で試す</a>
+          <a href="https://hoiku-letter-tool.web.app" class="inline-flex items-center justify-center rounded-2xl border border-white/60 px-8 py-4 text-base font-black text-white transition hover:bg-white/10">感想を送る</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-5 py-16">
+      <div class="mx-auto max-w-3xl">
+        <div class="text-center">
+          <p class="text-sm font-black text-peachDark">よくある質問</p>
+          <h2 class="mt-3 text-3xl font-black tracking-tight sm:text-4xl">気になること</h2>
+        </div>
+        <div class="mt-10 space-y-4">
+          <details class="rounded-3xl bg-white p-6 shadow-sm"><summary class="cursor-pointer font-black">無料で使えますか？</summary><p class="mt-4 text-sm leading-7 text-softBrown">はい。freeでも日本語生成を試せます。生成回数には制限があります。</p></details>
+          <details class="rounded-3xl bg-white p-6 shadow-sm"><summary class="cursor-pointer font-black">どんな入力が必要ですか？</summary><p class="mt-4 text-sm leading-7 text-softBrown">名前、年齢、活動の1文に加えて、必要なら様子タグを選ぶだけで使えます。様子タグは未選択でも生成できます。</p></details>
+          <details class="rounded-3xl bg-white p-6 shadow-sm"><summary class="cursor-pointer font-black">AIっぽい文章になりませんか？</summary><p class="mt-4 text-sm leading-7 text-softBrown">現場で使いやすい、やさしく丁寧な文になるよう調整しています。必要に応じて少し整えて使う前提のMVPです。</p></details>
+          <details class="rounded-3xl bg-white p-6 shadow-sm"><summary class="cursor-pointer font-black">plusでは何が変わりますか？</summary><p class="mt-4 text-sm leading-7 text-softBrown">主な違いは生成回数です。現在の実装では、plusで英語翻訳も利用できます。</p></details>
+          <details class="rounded-3xl bg-white p-6 shadow-sm"><summary class="cursor-pointer font-black">感想は送れますか？</summary><p class="mt-4 text-sm leading-7 text-softBrown">はい。感想回収は全プランで利用できます。改善要望も送れます。</p></details>
+          <details class="rounded-3xl bg-white p-6 shadow-sm"><summary class="cursor-pointer font-black">スマホでも使えますか？</summary><p class="mt-4 text-sm leading-7 text-softBrown">はい。スマホでも使いやすい画面で利用できます。</p></details>
+        </div>
+        <div class="mt-10 text-center">
+          <a href="https://hoiku-letter-tool.web.app" class="inline-flex items-center justify-center rounded-2xl bg-peach px-8 py-4 text-base font-black text-white shadow-soft transition hover:bg-peachDark">MVP版を使ってみる</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-orange-100 bg-white px-5 py-8">
+    <div class="mx-auto max-w-6xl text-center text-sm text-softBrown">© 保育お便り帳ジェネレーター</div>
+  </footer>
+</body>
+</html>
