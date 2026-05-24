@@ -51,7 +51,7 @@
         </header>
 
         <div class="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:gap-14">
-          <div>
+          <div class="order-2 lg:order-1">
             <p class="inline-flex rounded-full bg-white/90 px-4 py-2 text-sm font-black text-sage shadow-sm">
               名前と活動だけでOK
             </p>
@@ -83,8 +83,18 @@
             </p>
           </div>
 
-          <div>
-            <div class="rounded-[2.2rem] bg-white p-4 shadow-soft ring-1 ring-orange-100 sm:p-5 lg:p-6">
+          <div class="order-1 lg:order-2">
+            <div class="overflow-hidden rounded-[2.2rem] bg-white p-3 shadow-soft ring-1 ring-orange-100 sm:p-4 lg:p-5">
+              <img
+                src="./FV.PNG"
+                alt="保育士が夕方の保育室でPCを使っておたより作成をしている様子"
+                class="h-64 w-full rounded-[1.7rem] object-cover sm:h-80 lg:h-[34rem]"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </div>
+            <div class="mt-4 rounded-[2.2rem] bg-white p-4 shadow-soft ring-1 ring-orange-100 sm:p-5 lg:p-6">
               <div class="rounded-[1.8rem] bg-milk p-4 sm:p-5">
                 <div class="flex items-center justify-between">
                   <p class="text-sm font-black text-terracottaDeep">まずはこれだけ</p>
@@ -239,7 +249,7 @@
 
     <section class="bg-white px-5 py-16">
       <div class="mx-auto max-w-5xl">
-        <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+        <div class="grid gap-10 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
           <div>
             <p class="text-sm font-black text-terracottaDeep">できること</p>
             <h2 class="mt-3 text-3xl font-black leading-tight tracking-tight sm:text-4xl">
@@ -248,6 +258,15 @@
             <p class="mt-5 text-sm leading-7 text-stoneText">
               文章を全部まかせるのではなく、最初の一文に悩む時間を短くするためのツールです。
             </p>
+            <div class="mt-6 overflow-hidden rounded-[2rem] bg-milk p-3 shadow-sm ring-1 ring-orange-100 sm:p-4">
+              <img
+                src="./中盤.PNG"
+                alt="保育士がおたより作成のメモを確認しながらスマホを見る様子"
+                class="h-64 w-full rounded-[1.6rem] object-cover sm:h-80 lg:h-[29rem]"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
           </div>
           <div class="rounded-[2rem] bg-white p-8 shadow-sm ring-1 ring-orange-100">
             <p class="leading-8 text-stoneText">
@@ -364,18 +383,31 @@
     </section>
 
     <section class="bg-ink px-5 py-16 text-white">
-      <div class="mx-auto max-w-3xl rounded-[2rem] border border-white/10 bg-white/5 p-8 text-center shadow-soft backdrop-blur sm:p-10">
-        <h2 class="text-3xl font-black leading-tight sm:text-4xl">まず1回、使ってみてください。</h2>
-        <p class="mt-5 leading-8 text-white/80">合うかどうかは、実際に1回使うのが一番早いです。</p>
-        <div class="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
-          <a
-            href="https://hoiku-letter-tool.web.app"
-            class="inline-flex items-center justify-center rounded-2xl bg-white px-8 py-4 text-base font-black text-terracottaDeep shadow-soft transition hover:bg-milk"
-          >
-            まず1回試してみる
-          </a>
+      <div class="mx-auto max-w-5xl rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-soft backdrop-blur sm:p-8 lg:p-10">
+        <div class="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+          <div class="overflow-hidden rounded-[1.8rem] bg-white/5 p-3 ring-1 ring-white/10 sm:p-4">
+            <img
+              src="./CTA.PNG"
+              alt="仕事を終えた保育士が自宅で温かい飲み物を飲んで一息ついている様子"
+              class="h-64 w-full rounded-[1.4rem] object-cover sm:h-80 lg:h-[24rem]"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="text-center lg:text-left">
+            <h2 class="text-3xl font-black leading-tight sm:text-4xl">まず1回、使ってみてください。</h2>
+            <p class="mt-5 leading-8 text-white/80">おたより作成を引きずらず、家でひと息つける時間を少し増やせます。</p>
+            <div class="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center lg:justify-start">
+              <a
+                href="https://hoiku-letter-tool.web.app"
+                class="inline-flex items-center justify-center rounded-2xl bg-white px-8 py-4 text-base font-black text-terracottaDeep shadow-soft transition hover:bg-milk"
+              >
+                まず1回試してみる
+              </a>
+            </div>
+            <p class="mt-4 text-sm leading-7 text-white/70">登録後すぐ無料で試せます。</p>
+          </div>
         </div>
-        <p class="mt-4 text-sm leading-7 text-white/70">登録後すぐ無料で試せます。</p>
       </div>
     </section>
 
