@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>保育お便り帳ジェネレーター | 1分でお便りのたたき台完成</title>
+  <title>保育お便り帳ジェネレーター | 1分でお便りの下書き完成</title>
   <meta
     name="description"
-    content="名前と活動を入れるだけで、保護者向けお便り文のたたき台を1分で作れる保育お便り帳ジェネレーターです。年齢や様子タグは必要なときだけ追加できます。"
+    content="名前と活動を入れるだけで、保護者向けお便り文の下書きを1分で作れる保育お便り帳ジェネレーターです。年齢や様子タグは必要なときだけ追加できます。"
   />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -56,14 +56,13 @@
               名前と活動だけでOK
             </p>
             <h1 class="mt-5 text-[2.7rem] font-black leading-[1.08] tracking-tight sm:text-5xl lg:text-[3.8rem]">
-              名前と活動だけで、<br />
-              お便りの<br />
-              たたき台が出ます。
+              保育士さんの<br />
+              「何を書こう」を<br />
+              少しラクに。
             </h1>
             <p class="mt-5 max-w-xl text-base leading-7 text-stoneText sm:text-lg sm:leading-8">
-              名前と活動を入れるだけで、
-              保護者に伝える文章のたたき台を作れます。
-              年齢や様子タグは、必要なときだけ追加できます。
+              名前と活動だけで、<br class="sm:hidden" />
+              お便りの下書きが完成します。
             </p>
             <div class="mt-6 grid gap-3 text-sm font-bold text-cocoa sm:max-w-xl sm:grid-cols-3">
               <div class="rounded-2xl bg-white/90 px-4 py-3 shadow-sm ring-1 ring-orange-100">必須は2項目だけ</div>
@@ -192,8 +191,8 @@
             <div class="flex items-center gap-3">
               <div class="flex h-10 w-10 items-center justify-center rounded-full bg-sage text-base font-black text-white">2</div>
               <div>
-                <p class="text-lg font-black">たたき台をすぐ確認できる</p>
-                <p class="text-sm text-stoneText">AIっぽすぎない、自然なたたき台をすぐ確認できます。</p>
+                <p class="text-lg font-black">下書きをすぐ確認できる</p>
+                <p class="text-sm text-stoneText">自然な言葉選びの初案をすぐ確認できます。</p>
               </div>
             </div>
             <div class="mt-5 rounded-[1.6rem] bg-milk p-5 sm:p-6">
@@ -227,21 +226,40 @@
     <section class="px-5 py-16">
       <div class="mx-auto max-w-5xl">
         <div class="mx-auto max-w-2xl text-center">
-          <p class="text-sm font-black text-terracottaDeep">こんな負担、ありませんか</p>
-          <h2 class="mt-3 text-3xl font-black tracking-tight sm:text-4xl">たった数行でも、考えることが多い。</h2>
+          <p class="text-sm font-black text-terracottaDeep">現場の声</p>
+          <h2 class="mt-3 text-3xl font-black tracking-tight sm:text-4xl">書く負担は、見えにくい。</h2>
         </div>
         <div class="mt-10 grid gap-5 md:grid-cols-3">
           <article class="rounded-[2rem] bg-white p-7 shadow-sm ring-1 ring-orange-100">
-            <p class="text-xl font-black">「何を書こう」で止まる</p>
-            <p class="mt-4 text-sm leading-7 text-stoneText">保護者にどう伝えるか、毎回悩んでしまう。</p>
-          </article>
-          <article class="rounded-[2rem] bg-white p-7 shadow-sm ring-1 ring-orange-100">
-            <p class="text-xl font-black">同じ表現になりがち</p>
-            <p class="mt-4 text-sm leading-7 text-stoneText">先月と似ていないか、冷たく見えないか気になる。</p>
-          </article>
-          <article class="rounded-[2rem] bg-white p-7 shadow-sm ring-1 ring-orange-100">
             <p class="text-xl font-black">帰宅後も頭に残る</p>
-            <p class="mt-4 text-sm leading-7 text-stoneText">休んでいるはずなのに、お便りの一文を考えてしまう。</p>
+            <div class="mt-4 space-y-4 text-sm leading-7 text-stoneText">
+              <p>仕事は終わったはずなのに、</p>
+              <p>帰宅してからも、お便りや行事準備のことを考えてしまいます。</p>
+              <p>その日の出来事や保護者への伝え方が気になって、</p>
+              <p>頭の中だけ仕事をしているような日もあります。</p>
+            </div>
+            <p class="mt-5 text-sm font-bold text-cocoa">（保育士25年目）</p>
+          </article>
+          <article class="rounded-[2rem] bg-white p-7 shadow-sm ring-1 ring-orange-100">
+            <p class="text-xl font-black">「何を書こう」で止まる</p>
+            <div class="mt-4 space-y-4 text-sm leading-7 text-stoneText">
+              <p>子どもを見ている時間は、</p>
+              <p>なかなか事務作業ができません。</p>
+              <p>気づけば書類が溜まっていて、</p>
+              <p>いざ書こうとすると、</p>
+              <p>「何を書こう」「どう伝えよう」で手が止まります。</p>
+            </div>
+            <p class="mt-5 text-sm font-bold text-cocoa">（保育士6年目）</p>
+          </article>
+          <article class="rounded-[2rem] bg-white p-7 shadow-sm ring-1 ring-orange-100">
+            <p class="text-xl font-black">子どもと向き合う時間を増やしたい</p>
+            <div class="mt-4 space-y-4 text-sm leading-7 text-stoneText">
+              <p>本当に大切にしたいのは、</p>
+              <p>目の前の子どもたちと向き合う時間です。</p>
+              <p>書類や文章作成の負担が少しでも軽くなれば、</p>
+              <p>もっと保育に集中できると思います。</p>
+            </div>
+            <p class="mt-5 text-sm font-bold text-cocoa">（保育園副園長）</p>
           </article>
         </div>
       </div>
@@ -256,7 +274,7 @@
               ゼロから考えなくていいように。
             </h2>
             <p class="mt-5 text-sm leading-7 text-stoneText">
-              文章を全部まかせるのではなく、最初の一文に悩む時間を短くするためのツールです。
+              文章を全部まかせるのではなく、最初の一文に悩む時間を短くし、脳の余白を少し取り戻すためのツールです。
             </p>
             <div class="mt-6 overflow-hidden rounded-[2rem] bg-milk p-3 shadow-sm ring-1 ring-orange-100 sm:p-4">
               <img
@@ -271,7 +289,7 @@
           <div class="rounded-[2rem] bg-white p-8 shadow-sm ring-1 ring-orange-100">
             <p class="leading-8 text-stoneText">
               まず必要なのは、子どもの名前と活動だけ。
-              入力のハードルを下げて、保護者向け文章の土台をすぐ出せるようにしています。
+              入力のハードルを下げて、保護者向け文章の下書きをすぐ出せるようにしています。
             </p>
             <div class="mt-6 grid gap-4 sm:grid-cols-2">
               <div class="rounded-[1.5rem] bg-milk p-5">
@@ -301,7 +319,7 @@
             <div class="mt-6 rounded-[1.5rem] bg-milk p-5">
               <p class="text-sm font-black text-cocoa">Before / After</p>
               <p class="mt-3 text-sm leading-7 text-stoneText">Before: 「何から書けばいいか分からない」</p>
-              <p class="mt-2 text-sm leading-7 text-stoneText">After: 「名前と活動から、まず文章のたたき台がある」</p>
+              <p class="mt-2 text-sm leading-7 text-stoneText">After: 「名前と活動から、まず文章の下書きがある」</p>
             </div>
           </div>
         </div>
@@ -325,7 +343,7 @@
           </div>
           <div class="rounded-[2rem] border border-orange-100 p-7">
             <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-full bg-terracotta text-lg font-black text-white">2</div>
-            <p class="text-lg font-black">たたき台を確認</p>
+            <p class="text-lg font-black">下書きを確認</p>
             <p class="mt-3 text-sm leading-7 text-stoneText">保護者向けのお便り文がその場で出ます。</p>
           </div>
           <div class="rounded-[2rem] border border-orange-100 p-7">
@@ -396,7 +414,7 @@
           </div>
           <div class="text-center lg:text-left">
             <h2 class="text-3xl font-black leading-tight sm:text-4xl">まず1回、使ってみてください。</h2>
-            <p class="mt-5 leading-8 text-white/80">おたより作成を引きずらず、家でひと息つける時間を少し増やせます。</p>
+            <p class="mt-5 leading-8 text-white/80">静かな脳の残業を少し減らして、休む時間を取り戻すきっかけに。</p>
             <div class="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center lg:justify-start">
               <a
                 href="https://hoiku-letter-tool.web.app"
@@ -423,8 +441,8 @@
             <p class="mt-4 text-sm leading-7 text-stoneText">必須なのは名前と活動だけです。年齢や様子タグ、文章量などは、必要なときだけ追加できます。</p>
           </details>
           <details class="rounded-3xl bg-milk p-6">
-            <summary class="cursor-pointer font-black">AIっぽい文章になりませんか？</summary>
-            <p class="mt-4 text-sm leading-7 text-stoneText">自然な言い回しになるよう改善しています。生成文はたたき台として受け取り、最後はご自身で確認して使ってください。</p>
+            <summary class="cursor-pointer font-black">文章が不自然になりませんか？</summary>
+            <p class="mt-4 text-sm leading-7 text-stoneText">自然な言い回しになるよう改善しています。生成文は下書きとして受け取り、最後はご自身で確認して使ってください。</p>
           </details>
           <details class="rounded-3xl bg-milk p-6">
             <summary class="cursor-pointer font-black">無料で使えますか？</summary>
