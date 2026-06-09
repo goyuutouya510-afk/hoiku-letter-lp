@@ -45,51 +45,58 @@
 </head>
 <body class="bg-milk text-ink antialiased">
   <main>
-    <section class="overflow-hidden bg-grain px-5 py-6 sm:py-10 lg:py-14">
+    <section class="overflow-hidden bg-grain px-5 py-5 sm:py-10 lg:py-14">
       <div class="mx-auto max-w-6xl">
-        <header class="mb-8 flex items-center justify-between gap-4">
-          <p class="text-sm font-black text-terracottaDeep sm:text-base">保育お便り帳ジェネレーター</p>
+        <header class="mb-5 flex items-center justify-between gap-3 sm:mb-8 sm:gap-4">
+          <p class="text-sm font-black leading-tight text-terracottaDeep sm:text-base">保育お便り帳<br class="sm:hidden" />ジェネレーター</p>
           <a
             href="https://hoiku-letter-tool.web.app"
-            class="rounded-full bg-white px-4 py-2 text-sm font-bold text-terracottaDeep shadow-sm ring-1 ring-orange-100 transition hover:bg-oat"
+            data-analytics-event="app_start_click"
+            data-analytics-location="header"
+            class="rounded-full bg-white px-4 py-3 text-sm font-bold text-terracottaDeep shadow-sm ring-1 ring-orange-100 transition hover:bg-oat active:bg-sand"
           >
-            まず1回試してみる
+            無料で試す
           </a>
         </header>
 
-        <div class="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:gap-14">
-          <div class="order-2 lg:order-1">
+        <div class="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-start lg:gap-14">
+          <div class="order-1">
             <p class="inline-flex rounded-full bg-white/90 px-4 py-2 text-sm font-black text-sage shadow-sm">
-              名前と活動だけでOK
+              保育士さんの連絡帳・おたより作成に
             </p>
-            <h1 class="mt-5 text-[2.7rem] font-black leading-[1.08] tracking-tight sm:text-5xl lg:text-[3.8rem]">
-              保育士さんの<br />
-              「何を書こう」を<br />
-              少しラクに。
+            <h1 class="mt-4 text-[2.05rem] font-black leading-[1.16] tracking-tight sm:mt-5 sm:text-5xl lg:text-[3.05rem] xl:text-[3.35rem]">
+              子どもが帰ったあと、<br />
+              疲れた頭で<br />
+              おたよりを考えていませんか？
             </h1>
-            <p class="mt-5 max-w-xl text-base leading-7 text-stoneText sm:text-lg sm:leading-8">
-              名前と活動だけで、<br class="sm:hidden" />
-              お便りの下書きが完成します。
+            <p class="mt-4 max-w-xl text-base leading-7 text-stoneText sm:mt-5 sm:text-lg sm:leading-8">
+              保育士さんの連絡帳・おたより・案内文の下書きを、1分で作れるAIツールです。
             </p>
-            <div class="mt-6 grid gap-3 text-sm font-bold text-cocoa sm:max-w-xl sm:grid-cols-3">
-              <div class="rounded-2xl bg-white/90 px-4 py-3 shadow-sm ring-1 ring-orange-100">必須は2項目だけ</div>
-              <div class="rounded-2xl bg-white/90 px-4 py-3 shadow-sm ring-1 ring-orange-100">まずそのまま試せる</div>
-              <div class="rounded-2xl bg-white/90 px-4 py-3 shadow-sm ring-1 ring-orange-100">スマホで見やすい</div>
-            </div>
-            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <p class="mt-3 max-w-xl text-base leading-7 text-stoneText sm:text-lg sm:leading-8">
+              文章力ではなく、疲れた頭でゼロから考え続ける負担を軽くするために作りました。
+            </p>
+            <div class="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row">
               <a
                 href="https://hoiku-letter-tool.web.app"
-                class="inline-flex items-center justify-center rounded-2xl bg-terracotta px-8 py-4 text-base font-black text-white shadow-soft transition hover:bg-terracottaDeep"
+                data-analytics-event="cta_click_top"
+                data-analytics-secondary-event="app_start_click"
+                data-analytics-location="hero"
+                class="inline-flex min-h-14 items-center justify-center rounded-2xl bg-terracotta px-8 py-4 text-base font-black text-white shadow-soft transition hover:bg-terracottaDeep active:bg-terracottaDeep"
               >
-                まず1回試してみる
+                おたよりの下書きを作ってみる
               </a>
             </div>
-            <p class="mt-4 max-w-xl text-sm leading-7 text-stoneText">
-              登録後すぐ無料で試せます。
+            <p class="mt-3 max-w-xl text-sm leading-7 text-stoneText sm:mt-4">
+              Googleログイン後、無料プランで1日1回試せます。
             </p>
+            <div class="mt-5 grid grid-cols-1 gap-2 text-xs font-bold text-cocoa sm:max-w-xl sm:grid-cols-3 sm:gap-3 sm:text-sm">
+              <div class="rounded-xl bg-white/70 px-3 py-2 ring-1 ring-orange-100 sm:rounded-2xl sm:px-4 sm:py-3">連絡帳・おたより・案内文</div>
+              <div class="rounded-xl bg-white/70 px-3 py-2 ring-1 ring-orange-100 sm:rounded-2xl sm:px-4 sm:py-3">コピーしてすぐ使える</div>
+              <div class="rounded-xl bg-white/70 px-3 py-2 ring-1 ring-orange-100 sm:rounded-2xl sm:px-4 sm:py-3">AIが苦手でも迷わない</div>
+            </div>
           </div>
 
-          <div class="order-1 lg:order-2">
+          <div class="order-2">
             <div class="overflow-hidden rounded-[2.2rem] bg-white p-3 shadow-soft ring-1 ring-orange-100 sm:p-4 lg:p-5">
               <img
                 src="./FV.PNG"
@@ -191,7 +198,7 @@
           </div>
 
           <div class="flex justify-center">
-            <div class="rounded-full bg-terracotta px-5 py-2 text-sm font-black text-white">そのまま生成</div>
+            <div class="px-5 py-2 text-sm font-black text-terracottaDeep">入力すると、下書きがすぐ出ます</div>
           </div>
 
           <div class="rounded-[2rem] bg-white p-6 shadow-soft ring-1 ring-orange-100 sm:p-8">
@@ -219,9 +226,12 @@
             <div class="mt-5 flex flex-col gap-3 sm:flex-row">
               <a
                 href="https://hoiku-letter-tool.web.app"
-                class="inline-flex items-center justify-center rounded-2xl bg-terracotta px-7 py-4 text-base font-black text-white shadow-soft transition hover:bg-terracottaDeep"
+                data-analytics-event="app_start_click"
+                data-analytics-secondary-event="cta_click_middle"
+                data-analytics-location="input_example"
+                class="inline-flex min-h-14 items-center justify-center rounded-2xl bg-terracotta px-7 py-4 text-base font-black text-white shadow-soft transition hover:bg-terracottaDeep active:bg-terracottaDeep"
               >
-                まず1回試してみる
+                連絡帳文を試してみる
               </a>
               <p class="self-center text-sm leading-7 text-stoneText">登録後すぐ無料で試せます。</p>
             </div>
@@ -234,7 +244,13 @@
       <div class="mx-auto max-w-5xl">
         <div class="mx-auto max-w-2xl text-center">
           <p class="text-sm font-black text-terracottaDeep">現場の声</p>
-          <h2 class="mt-3 text-3xl font-black tracking-tight sm:text-4xl">書く負担は、見えにくい。</h2>
+          <h2 class="mt-3 text-3xl font-black tracking-tight sm:text-4xl">考え続ける負担は、見えにくい。</h2>
+          <div class="mt-5 space-y-3 text-sm leading-7 text-stoneText sm:text-base sm:leading-8">
+            <p>日中は子ども対応で手いっぱい。事務はどうしても後ろに回ります。</p>
+            <p>おたより。連絡帳。保護者への案内文。</p>
+            <p>書く時間よりも、「どう伝えるか」を考える時間が重い。</p>
+            <p>その負担を、少しでも軽くするために作りました。</p>
+          </div>
         </div>
         <div class="mt-10 grid gap-5 md:grid-cols-3">
           <article class="rounded-[2rem] bg-white p-7 shadow-sm ring-1 ring-orange-100">
@@ -269,6 +285,20 @@
             <p class="mt-5 text-sm font-bold text-cocoa">（保育園副園長）</p>
           </article>
         </div>
+        <div class="mx-auto mt-10 max-w-2xl rounded-[1.75rem] bg-white p-6 text-center shadow-sm ring-1 ring-orange-100 sm:p-8">
+          <p class="text-sm leading-7 text-stoneText">
+            文章力の問題ではなく、時間と仕組みの問題。疲れた頭でゼロから考える前に、まず下書きを出してから整えられます。
+          </p>
+          <a
+            href="https://hoiku-letter-tool.web.app"
+            data-analytics-event="cta_click_middle"
+            data-analytics-secondary-event="app_start_click"
+            data-analytics-location="after_pain"
+            class="mt-5 inline-flex min-h-14 w-full items-center justify-center rounded-2xl bg-terracotta px-7 py-4 text-base font-black text-white shadow-soft transition hover:bg-terracottaDeep active:bg-terracottaDeep sm:w-auto"
+          >
+            無料で試してみる
+          </a>
+        </div>
       </div>
     </section>
 
@@ -281,7 +311,7 @@
               ゼロから考えなくていいように。
             </h2>
             <p class="mt-5 text-sm leading-7 text-stoneText">
-              文章を全部まかせるのではなく、最初の一文に悩む時間を短くし、脳の余白を少し取り戻すためのツールです。
+              文章を全部まかせるのではなく、最初の一文に悩む時間を短くし、保育士さんの脳の余白を少し取り戻すための補助ツールです。
             </p>
             <div class="mt-6 overflow-hidden rounded-[2rem] bg-milk p-3 shadow-sm ring-1 ring-orange-100 sm:p-4">
               <img
@@ -296,7 +326,7 @@
           <div class="rounded-[2rem] bg-white p-8 shadow-sm ring-1 ring-orange-100">
             <p class="leading-8 text-stoneText">
               まず必要なのは、子どもの名前と活動だけ。
-              入力のハードルを下げて、保護者向け文章の下書きをすぐ出せるようにしています。
+              入力のハードルを下げて、連絡帳・おたより・案内文の下書きをすぐ出せるようにしています。
             </p>
             <div class="mt-6 grid gap-4 sm:grid-cols-2">
               <div class="rounded-[1.5rem] bg-milk p-5">
@@ -319,6 +349,7 @@
             <div class="mt-4 rounded-[1.5rem] bg-milk p-5">
               <p class="text-sm font-black text-cocoa">出てくるもの</p>
                 <ul class="mt-3 space-y-2 text-sm leading-7 text-stoneText">
+                  <li>・コピーしてすぐ使える下書き</li>
                   <li>・保護者向けのお便り文</li>
                   <li>・plusでは英語翻訳</li>
                 </ul>
@@ -328,6 +359,15 @@
               <p class="mt-3 text-sm leading-7 text-stoneText">Before: 「何から書けばいいか分からない」</p>
               <p class="mt-2 text-sm leading-7 text-stoneText">After: 「名前と活動から、まず文章の下書きがある」</p>
             </div>
+            <a
+              href="https://hoiku-letter-tool.web.app"
+              data-analytics-event="cta_click_bottom"
+              data-analytics-secondary-event="app_start_click"
+              data-analytics-location="after_features"
+              class="mt-7 inline-flex min-h-14 w-full items-center justify-center rounded-2xl bg-terracotta px-7 py-4 text-base font-black text-white shadow-soft transition hover:bg-terracottaDeep active:bg-terracottaDeep"
+            >
+              おたよりの下書きを作ってみる
+            </a>
           </div>
         </div>
       </div>
@@ -382,9 +422,12 @@
             </ul>
             <a
               href="https://hoiku-letter-tool.web.app"
-              class="mt-7 inline-flex w-full items-center justify-center rounded-2xl bg-terracotta px-6 py-4 font-black text-white transition hover:bg-terracottaDeep"
+              data-analytics-event="cta_click_bottom"
+              data-analytics-secondary-event="app_start_click"
+              data-analytics-location="pricing_free"
+              class="mt-7 inline-flex min-h-14 w-full items-center justify-center rounded-2xl bg-terracotta px-6 py-4 font-black text-white transition hover:bg-terracottaDeep active:bg-terracottaDeep"
             >
-              まず1回試してみる
+              無料で試してみる
             </a>
           </div>
 
@@ -398,9 +441,12 @@
             </ul>
             <a
               href="https://hoiku-letter-tool.web.app"
-              class="mt-7 inline-flex w-full items-center justify-center rounded-2xl bg-ink px-6 py-4 font-black text-white transition hover:bg-cocoa"
+              data-analytics-event="app_start_click"
+              data-analytics-secondary-event="cta_click_bottom"
+              data-analytics-location="pricing_plus"
+              class="mt-7 inline-flex min-h-14 w-full items-center justify-center rounded-2xl bg-ink px-6 py-4 font-black text-white transition hover:bg-cocoa active:bg-cocoa"
             >
-              有料プランを見る
+              まず下書きを試してみる
             </a>
           </div>
         </div>
@@ -420,17 +466,28 @@
             />
           </div>
           <div class="text-center lg:text-left">
-            <h2 class="text-3xl font-black leading-tight sm:text-4xl">まず1回、使ってみてください。</h2>
+            <h2 class="text-3xl font-black leading-tight sm:text-4xl">疲れた頭で、ゼロから考える前に。</h2>
             <p class="mt-5 leading-8 text-white/80">静かな脳の残業を少し減らして、休む時間を取り戻すきっかけに。</p>
             <div class="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center lg:justify-start">
               <a
                 href="https://hoiku-letter-tool.web.app"
-                class="inline-flex items-center justify-center rounded-2xl bg-white px-8 py-4 text-base font-black text-terracottaDeep shadow-soft transition hover:bg-milk"
+                data-analytics-event="cta_click_bottom"
+                data-analytics-secondary-event="app_start_click"
+                data-analytics-location="final_cta"
+                class="inline-flex min-h-14 items-center justify-center rounded-2xl bg-white px-8 py-4 text-base font-black text-terracottaDeep shadow-soft transition hover:bg-milk active:bg-oat"
               >
-                まず1回試してみる
+                無料で試してみる
               </a>
             </div>
             <p class="mt-4 text-sm leading-7 text-white/70">登録後すぐ無料で試せます。</p>
+            <a
+              href="https://hoiku-letter-tool.web.app"
+              data-analytics-event="feedback_click"
+              data-analytics-location="final_cta"
+              class="mt-3 inline-flex text-sm font-bold text-white/70 underline-offset-4 transition hover:text-white hover:underline"
+            >
+              アプリを開いて感想を送る
+            </a>
           </div>
         </div>
       </div>
@@ -477,6 +534,30 @@
   </main>
   <script>
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    function trackLpEvent(eventName, payload) {
+      window.va("event", { name: eventName, data: payload });
+      if (typeof window.clarity === "function") {
+        window.clarity("event", eventName);
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var target = event.target.closest("[data-analytics-event]");
+      if (!target) return;
+
+      var eventName = target.dataset.analyticsEvent;
+      var secondaryEventName = target.dataset.analyticsSecondaryEvent;
+      var payload = {
+        location: target.dataset.analyticsLocation || "unknown",
+        label: target.textContent.trim(),
+        href: target.getAttribute("href") || ""
+      };
+
+      trackLpEvent(eventName, payload);
+      if (secondaryEventName) {
+        trackLpEvent(secondaryEventName, payload);
+      }
+    });
   </script>
   <script defer src="/_vercel/insights/script.js"></script>
 </body>
